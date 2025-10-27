@@ -80,7 +80,7 @@ text-decoration: underline;
 body {
 background:
     url('/assets/PelipperBuilding.png') no-repeat left top,
-    url('/assets/BackgroundWater.png') no-repeat right bottom;
+    url('/assets/BackgroundWater.png') no-repeat right top;
 background-size: 40% auto, cover;
 background-size: contain, cover;
 color: white;
