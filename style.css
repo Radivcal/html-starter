@@ -80,7 +80,7 @@ text-decoration: underline;
 body {
 background:
     url('/assets/PelipperBuilding.png') no-repeat left top,
-    url('/assets/BackgroundWater.png') repeat left top,
+    url('/assets/BackgroundWater.png') repeat right top,
     linear-gradient(to bottom, #87cefa 0%, #2b81e5 100%);
 background-size: auto 100%, auto 100%, cover;
 background-position: left bottom, right bottom, 0 0;
