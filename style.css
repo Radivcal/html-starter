@@ -1,4 +1,4 @@
-/* === Basic Reset === */
+/*  Basic Reset  */
 * {
 margin: 0;
 padding: 0;
@@ -79,7 +79,7 @@ text-decoration: underline;
 
 body {
 background:
-    url('/assets/PelipperHome.jpg') repeat-x bottom,
+    url('/assets/PelipperHome.jpg') no-repeat center center fixed,
     linear-gradient(to bottom, #87cefa 0%, #1b2735 100%);
 background-size: contain, cover;
 color: white;
