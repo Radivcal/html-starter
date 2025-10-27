@@ -43,7 +43,7 @@ header nav a:hover {
 color: #87cefa;
 }
 
-/* === Main Content === */
+/* Main Content */
 main {
 text-align: center;
 padding: 3em 1em;
@@ -79,7 +79,7 @@ text-decoration: underline;
 
 body {
 background:
-    url('/assets/PelipperBuilding.png') no-repeat center center fixed,
+    url('/assets/PelipperBuilding.png') no-repeat center right fixed,
     linear-gradient(to bottom, #87cefa 0%, #1b2735 100%);
 background-size: contain, cover;
 color: white;
