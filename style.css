@@ -98,3 +98,41 @@ background-attachment: fixed;
 color: white;
 font-family: 'Segoe UI', sans-serif;
 }
+
+.scene {
+position: relative;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.background {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* Shared style for all clickable areas */
+.clickable {
+position: absolute;
+cursor: pointer;
+
+  /* For debugging only — makes them visible while positioning */
+background: rgba(255, 0, 0, 0.3);
+}
+
+/* Specific clickable areas (adjust these numbers) */
+.door {
+  top: 63%;      /* vertical position */
+  left: 48%;     /* horizontal position */
+  width: 6%;     /* how wide the clickable area is */
+  height: 15%;   /* how tall it is */
+}
+
+.board {
+top: 45%;
+left: 22%;
+width: 10%;
+height: 12%;
+}
+
