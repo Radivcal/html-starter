@@ -41,10 +41,6 @@ margin: 0 10px;
 font-weight: bold;
 }
 
-header nav a:hover {
-color: #87cefa;
-}
-
 /* Main Content */
 main {
 text-align: center;
