@@ -79,8 +79,10 @@ text-decoration: underline;
 
 body {
 background:
-    url('/assets/PelipperBuilding.png') no-repeat center right fixed,
+    url('/assets/PelipperBuilding.png') repeat-x right fixed,
     linear-gradient(to bottom, #87cefa 0%, #1b2735 100%);
+    backdrop-filter: blur(5px);
+    
 background-size: contain, cover;
 color: white;
 font-family: 'Segoe UI', sans-serif;
