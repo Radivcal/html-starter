@@ -16,7 +16,8 @@ line-height: 1.6;
 /* Header */
 header {
 text-align: center;
-padding: 2em 1em;
+margin-top: 0;
+padding: 1em 1em;
 background: rgba(255, 255, 255, 0.1);
 backdrop-filter: blur(5px);
 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
