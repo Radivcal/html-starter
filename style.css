@@ -80,7 +80,8 @@ text-decoration: underline;
 body {
 background:
     url('/assets/PelipperBuilding.png') no-repeat left top,
-    url('/assets/BackgroundWater.png') repeat right top;
+    url('/assets/BackgroundWater.png') repeat left top;
+background-attachment: fixed;
 background-size: contain, cover;
 color: white;
 font-family: 'Segoe UI', sans-serif;
