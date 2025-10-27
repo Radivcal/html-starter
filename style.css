@@ -79,7 +79,7 @@ text-decoration: underline;
 
 body {
 background:
-    url('/assets/PelipperBuilding.png') repeat-x left fixed,
+    url('/assets/PelipperBuilding.png') repeat-y left fixed,
     linear-gradient(to bottom, #87cefa 0%, #2b81e5 100%);
     backdrop-filter: blur(5px);
 
