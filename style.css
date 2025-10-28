@@ -100,11 +100,11 @@ font-family: 'Segoe UI', sans-serif;
 
 .mute-icon {
 position: absolute;
-  top: 50%;      /* vertical position */
+  top: 30%;      /* vertical position */
   left: 30%;     /* horizontal position */
   width: 60px;   /* icon size */
 cursor: pointer;
-transition: transform 0.2s ease;
+transition: transform 0.1s ease;
 }
 
 .mute-icon:hover {
