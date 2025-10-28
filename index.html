@@ -33,8 +33,9 @@
     </footer>
 
     <script>
+      const audio = new Audio('/assets/PelipperTheme.mp3');
+  audio.loop = true;
 
-  // try autoplay, else wait for user click
   audio.play().catch(() => {
     console.log('Autoplay blocked — waiting for user interaction');
     document.body.addEventListener('click', () => audio.play(), { once: true });
