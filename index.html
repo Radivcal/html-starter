@@ -31,5 +31,20 @@
     <footer style="text-align:center; margin-top:4em;">
       <p>Made with 💌 by PokéSoc | Developed by <a href="mailto:ethan.dogra3@gmail.com">Ethan Dogra</a> | Deployed on <a href="https://vercel.com">Vercel</a></p>
     </footer>
+
+    <script>
+        let frame = 1;
+    const totalFrames = 10;
+    const interval = 300;
+
+    setInterval(() => {
+      document.body.style.backgroundImage = `
+        url('/assets/PelipperLandingPageAnim${frame}.png'),
+        linear-gradient(to bottom, #87cefa 0%, #2b81e5 100%)`;
+
+      frame = (frame % totalFrames) + 1;
+    }, interval);
+  </script>
+
   </body>
 </html>
