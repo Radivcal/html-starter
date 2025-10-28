@@ -33,21 +33,6 @@
     </footer>
 
     <script>
-        let frame = 1;
-    const totalFrames = 10;
-    const interval = 300;
-
-    setInterval(() => {
-      document.body.style.backgroundImage = `
-        url('/assets/PelipperLandingPageAnim${frame}.png'),
-        linear-gradient(to bottom, #87cefa 0%, #2b81e5 100%)`;
-
-      frame = (frame % totalFrames) + 1;
-    }, interval);
-
-    // Repeating background Sound
-      const audio = new Audio('/assets/PelipperTheme.mp3');
-  audio.loop = true;
 
   // try autoplay, else wait for user click
   audio.play().catch(() => {
