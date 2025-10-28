@@ -100,8 +100,8 @@ font-family: 'Segoe UI', sans-serif;
 
 .mute-icon {
 position: absolute;
-  top: 10%;      /* vertical position */
-  left: 85%;     /* horizontal position */
+  top: 50%;      /* vertical position */
+  left: 30%;     /* horizontal position */
   width: 60px;   /* icon size */
 cursor: pointer;
 transition: transform 0.2s ease;

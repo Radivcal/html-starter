@@ -36,7 +36,7 @@
     <img src="/assets/PelipperAudio.webp" alt="Mute toggle" class="mute-icon" onclick="toggleMute()">
   </div>
 
-  <audio id="bgAudio" src="/sounds/PelipperTheme.mp3" autoplay loop></audio>
+<audio id="bgAudio" src="/sounds/PelipperTheme.mp3" autoplay loop muted></audio>
 
     <script>
   const audio = document.getElementById('bgAudio');
@@ -45,7 +45,6 @@
   function toggleMute() {
     audio.muted = !audio.muted;
 
-    // Optional: change the icon image when muted/unmuted
     if (audio.muted) {
       icon.src = '/assets/MutedPelipper.webp';
     } else {
