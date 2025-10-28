@@ -32,14 +32,27 @@
       <p>Made with 💌 by PokéSoc | Developed by <a href="mailto:ethan.dogra3@gmail.com">Ethan Dogra</a> | Deployed on <a href="https://vercel.com">Vercel</a></p>
     </footer>
 
-    <script>
-      const audio = new Audio('/assets/PelipperTheme.mp3');
-  audio.loop = true;
+  <div class="scene">
+    <img src="/assets/PelipperAudio.webp" alt="Mute toggle" class="mute-icon" onclick="toggleMute()">
+  </div>
 
-  audio.play().catch(() => {
-    console.log('Autoplay blocked — waiting for user interaction');
-    document.body.addEventListener('click', () => audio.play(), { once: true });
-  });
+  <audio id="bgAudio" src="/sounds/PelipperTheme.mp3" autoplay loop></audio>
+
+    <script>
+  const audio = document.getElementById('bgAudio');
+  const icon = document.querySelector('.mute-icon');
+
+  function toggleMute() {
+    audio.muted = !audio.muted;
+
+    // Optional: change the icon image when muted/unmuted
+    if (audio.muted) {
+      icon.src = '/assets/MutedPelipper.webp';
+    } else {
+      icon.src = '/assets/PelipperAudio.webp';
+    }
+  }
+
   </script>
 
   </body>
