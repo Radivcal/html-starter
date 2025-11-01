@@ -183,13 +183,13 @@ transform: scale(1.1);
 }
 
 .paper {
-    width: 11px;
-    top: 40%;
-    left: 30%;
+    width: 22px;
+    top: 50%;
+    left: 35%;
 }
 
 .door {
-    width: 80px;
+    width: 60px;
     top: 40%;
-    left: 20%;
+    left: 50%;
 }
