@@ -151,19 +151,16 @@ transform: scale(1.1);
     position: relative;
     margin-top: 0;
     height: 100vh;
-    width: max(100vw,2000px);
+    width: 2100px;
     background: linear-gradient(to bottom, #87cefa, #2b81e5);
     overflow: visible;
 }
 
 /* Background image layer */
 .bg-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: auto;
-    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
     z-index: 1;
 }
 
@@ -187,5 +184,5 @@ transform: scale(1.1);
 
 .door {
     top: 40vh;
-    left: 60%;
+    left: 20%;
 }
