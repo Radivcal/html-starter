@@ -34,12 +34,6 @@
       <button id ="toggleFooter">Toggle Footer</button>
     </footer>
 
-  <div class="scene">
-    <img src="/assets/PelipperAudio.webp" alt="Mute toggle" class="mute-icon" onclick="toggleMute()">
-  </div>
-
-<audio id="bgAudio" src="/assets/PelipperAmbience.mp3" ></audio>
-
     <script>
       const header = document.getElementById('mainHeader');
       const footer = document.getElementById('mainFooter');
@@ -59,19 +53,6 @@
           ? 'Show Footer ↓'
           : 'Hide Footer ✕';
       });
-
-  const audio = document.getElementById('bgAudio');
-  const icon = document.querySelector('.mute-icon');
-
-  function toggleMute() {
-    audio.muted = !audio.muted;
-
-    if (audio.muted) {
-      icon.src = '/assets/MutedPelipper.webp';
-    } else {
-      icon.src = '/assets/PelipperAudio.webp';
-    }
-  }
 
   </script>
 
