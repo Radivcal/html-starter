@@ -116,7 +116,7 @@ transform: rotate(0deg);
 
 .footer-arrow {
 position: absolute;
-top: 60px; /* just above footer */
+top: 0px; /* just above footer */
 right: 10px;
 transform: rotate(180deg);
 }
