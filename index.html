@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="/assets/Pelipper.png" />
   </head>
 
-  <body>
+  <>
     <header style="text-align:center; margin-top:0em;" id="mainHeader">
       <img src="/assets/PelipperIcon.webp" alt="Pelipper Logo" width="200" />
       <h1>Pelipper Puzzles</h1>
@@ -70,24 +70,24 @@
     window.addEventListener('load', () => {
       document.documentElement.scrollLeft = 0;
     });
+  </script>
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
 
-      const clickables = document.querySelectorAll('.clickable');
+    function adjustForZoom() {
+      const scale = window.visualViewport ? 1 / window.visualViewport.scale : 1;
+      clickables.forEach(el => {
+        el.style.transform = `scale(${scale})`;
+      });
+    }
 
-      function adjustForZoom() {
-        const scale = window.visualViewport ? 1 / window.visualViewport.scale : 1;
-        clickables.forEach(el => {
-          el.style.transform = `scale(${scale})`;
-        });
-      }
-
-      if (window.visualViewport) {
-        window.visualViewport.addEventListener('resize', adjustForZoom);
-        window.visualViewport.addEventListener('scroll', adjustForZoom);
-      }
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', adjustForZoom);
+      window.visualViewport.addEventListener('scroll', adjustForZoom);
+    }
 
     // Initial correction
     adjustForZoom();
-
   </script>
 
   </body>
