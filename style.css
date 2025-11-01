@@ -86,6 +86,28 @@ footer a:hover {
 text-decoration: underline;
 }
 
+/* Collapsed state (slid out of view) */
+header.hidden {
+transform: translateY(-100%);
+opacity: 0;
+}
+
+footer.hidden {
+transform: translateY(100%);
+opacity: 0;
+}
+
+/* Optional: nice button style */
+button {
+background: #87cefa;
+border: none;
+border-radius: 6px;
+padding: 0.4em 0.8em;
+cursor: pointer;
+color: black;
+font-weight: bold;
+}
+
 /* Background */
 body {
 background:
@@ -98,6 +120,8 @@ color: white;
 font-family: 'Segoe UI', sans-serif;
 }
 
+
+/* Mute Icon */
 .mute-icon {
 position: absolute;
 top: 30%;

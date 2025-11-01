@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header style="text-align:center; margin-top:0em;">
+    <header style="text-align:center; margin-top:0em;" id="mainHeader">
       <img src="/assets/PelipperIcon.webp" alt="Pelipper Logo" width="200" />
       <h1>Pelipper Puzzles</h1>
       <p>
@@ -26,19 +26,40 @@
         <a href="/hints.html">Hints</a> ·
         <a href="/about.html">About</a>
       </nav>
+      <button id="toggleHeader">Toggle Header</button>
     </header>
 
     <footer style="text-align:center; margin-top:4em;">
       <p>Made with 💌 by PokéSoc | Developed by <a href="mailto:ethan.dogra3@gmail.com">Ethan Dogra</a> | Deployed on <a href="https://vercel.com">Vercel</a></p>
+      <button id ="toggleFooter">Toggle Footer</button>
     </footer>
 
   <div class="scene">
     <img src="/assets/PelipperAudio.webp" alt="Mute toggle" class="mute-icon" onclick="toggleMute()">
   </div>
 
-<audio id="bgAudio" src="/assets/PelipperAmbience.mp3" autoplay loop></audio>
+<audio id="bgAudio" src="/assets/PelipperAmbience.mp3" ></audio>
 
     <script>
+      const header = document.getElementById('mainHeader');
+      const footer = document.getElementById('mainFooter');
+      const toggleHeaderBtn = document.getElementById('toggleHeader');
+      const toggleFooterBtn = document.getElementById('toggleFooter');
+
+      toggleHeaderBtn.addEventListener('click', () => {
+        header.classList.toggle('hidden');
+        toggleHeaderBtn.textContent = header.classList.contains('hidden')
+          ? 'Show Header ↑'
+          : 'Hide Header ✕';
+      });
+
+      toggleFooterBtn.addEventListener('click', () => {
+        footer.classList.toggle('hidden');
+        toggleFooterBtn.textContent = footer.classList.contains('hidden')
+          ? 'Show Footer ↓'
+          : 'Hide Footer ✕';
+      });
+
   const audio = document.getElementById('bgAudio');
   const icon = document.querySelector('.mute-icon');
 
