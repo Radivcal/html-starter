@@ -149,7 +149,7 @@ transform: scale(1.1);
 
 .scene {
     position: relative;
-    margin-top: 160px;
+    margin-top: 0;
     height: 100vh;
     width: max(100vw,2000px);
     background: linear-gradient(to bottom, #87cefa, #2b81e5);
