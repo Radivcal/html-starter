@@ -148,11 +148,12 @@ transform: scale(1.1);
 }
 
 .scene {
-    margin-top: 160px;
     position: relative;
+    margin-top: 160px;
+    height: 100vh;
     width: max(100vw,2000px);
-    overflow: visible;
     background: linear-gradient(to bottom, #87cefa, #2b81e5);
+    overflow: visible;
 }
 
 /* Background image layer */
