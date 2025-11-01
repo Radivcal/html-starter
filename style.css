@@ -170,7 +170,6 @@ transform: scale(1.1);
     position: absolute;
     width: 80px;
     z-index: 2;
-    transform-origin: top left;
     cursor: pointer;
     transition: transform 0.2s;
 }
