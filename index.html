@@ -36,13 +36,30 @@
     </footer>
 
   <script>
-  const header = document.getElementById('mainHeader');
-  const arrow = document.getElementById('toggleHeader');
+    const header = document.getElementById('mainHeader');
+    const footer = document.getElementById('mainFooter');
+    const toggleHeader = document.getElementById('toggleHeader');
+    const toggleFooter = document.getElementById('toggleFooter');
 
-  arrow.addEventListener('click', () => {
-    header.classList.toggle('collapsed');
-  });
+    toggleHeader.addEventListener('click', () => {
+      header.classList.toggle('hidden');
 
+      if (header.classList.contains('hidden')) {
+        toggleHeader.classList.add('detached');
+      } else {
+        toggleHeader.classList.remove('detached');
+      }
+    });
+
+    toggleFooter.addEventListener('click', () => {
+      footer.classList.toggle('hidden');
+
+      if (footer.classList.contains('hidden')) {
+        toggleFooter.classList.add('detached');
+      } else {
+        toggleFooter.classList.remove('detached');
+      }
+    });
   </script>
 
   </body>
