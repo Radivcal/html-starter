@@ -176,13 +176,13 @@ transform: scale(1.1);
 
 /* Specific locations */
 .pelipper {
-    top: 40%;
-    left: 10%;
+    top: 400px;
+    left: 500px;
 }
 
 .door {
-    top: 40%;
-    left: 20%;
+    top: 200px;
+    left: 300px;
 }
 
 .clickable:hover {
