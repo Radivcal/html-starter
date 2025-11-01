@@ -88,12 +88,12 @@ text-decoration: underline;
 
 /* Collapsed state (slid out of view) */
 header.hidden {
-transform: translateY(100%);
+transform: translateY(-100%);
 opacity: 100;
 }
 
 footer.hidden {
-transform: translateY(-100%);
+transform: translateY(100%);
 opacity: 100;
 }
 
@@ -115,7 +115,7 @@ transform: rotate(0deg);
 
 .footer-arrow {
 position: absolute;
-top: -15px; /* just above footer */
+top: 15px; /* just above footer */
 transform: rotate(180deg);
 }
 
