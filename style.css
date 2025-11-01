@@ -148,7 +148,7 @@ transform: scale(1.1);
 }
 
 .scene {
-    position: absolute;
+    position: relative;
     margin-top: 0;
     height: 100vh;
     width: auto;
@@ -177,21 +177,18 @@ transform: scale(1.1);
 
 /* Specific locations */
 .pelipper {
-    position: absolute;
     width: 80px;
     top: 40%;
     left: 10%;
 }
 
 .paper {
-    position: absolute;
     width: 22px;
     top: 50%;
     left: 32%;
 }
 
 .door {
-    position: absolute;
     width: 60px;
     top: 43%;
     left: 40%;
