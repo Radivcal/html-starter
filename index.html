@@ -26,7 +26,6 @@
         <a href="/hints.html">Hints</a> ·
         <a href="/about.html">About</a>
       </nav>
-      <button id="toggleHeader">Hide Header ✕</button>
     </header>
 
     <img src="/assets/arrow.webp" alt="Toggle Header" id="toggleHeader" class="toggle-arrow header-arrow">
@@ -35,10 +34,30 @@
 
     <footer style="text-align:center; margin-top:4em;" id="mainFooter">
       <p>Made with 💌 by PokéSoc | Developed by <a href="mailto:ethan.dogra3@gmail.com">Ethan Dogra</a> | Deployed on <a href="https://vercel.com">Vercel</a></p>
-      <button id ="toggleFooter">Hide Footer ✕</button>
     </footer>
 
   <script>
+    const header = document.getElementById('mainHeader');
+    const footer = document.getElementById('mainFooter');
+    const toggleHeader = document.getElementById('toggleHeader');
+    const toggleFooter = document.getElementById('toggleFooter');
+
+    toggleHeader.addEventListener('click', () => {
+      header.classList.toggle('hidden');
+      // Flip arrow depending on state
+      toggleHeader.style.transform = header.classList.contains('hidden')
+        ? 'rotate(180deg)'
+        : 'rotate(0deg)';
+    });
+
+    toggleFooter.addEventListener('click', () => {
+      footer.classList.toggle('hidden');
+      // Flip arrow depending on state (footer already rotated by default)
+      toggleFooter.style.transform = footer.classList.contains('hidden')
+        ? 'rotate(0deg)'  // pointing down when hidden
+        : 'rotate(180deg)'; // pointing up when visible
+    });
+
   </script>
 
   </body>
