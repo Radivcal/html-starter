@@ -97,15 +97,33 @@ transform: translateY(-100%);
 opacity: 0;
 }
 
-/* Optional: nice button style */
-button {
-background: #87cefa;
-border: none;
-border-radius: 6px;
-padding: 0.4em 0.8em;
+/* Toggle arrows */
+.toggle-arrow {
+position: fixed;
+width: 30px;
+height: 30px;
 cursor: pointer;
-color: black;
-font-weight: bold;
+left: 10px; /* edge of screen */
+z-index: 100;
+opacity: 0.9;
+transition: transform 0.3s ease;
+}
+
+/* Below header */
+.header-arrow {
+top: 60px; /* adjust based on header height */
+}
+
+/* Above footer */
+.footer-arrow {
+bottom: 60px; /* adjust based on footer height */
+transform: rotate(180deg); /* flipped to point up */
+}
+
+/* Hover effect */
+.toggle-arrow:hover {
+opacity: 1;
+transform: scale(1.1);
 }
 
 /* Background */
