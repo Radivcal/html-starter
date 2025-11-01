@@ -71,6 +71,23 @@
       document.documentElement.scrollLeft = 0;
     });
 
+      const clickables = document.querySelectorAll('.clickable');
+
+      function adjustForZoom() {
+        const scale = window.visualViewport ? 1 / window.visualViewport.scale : 1;
+        clickables.forEach(el => {
+          el.style.transform = `scale(${scale})`;
+        });
+      }
+
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', adjustForZoom);
+        window.visualViewport.addEventListener('scroll', adjustForZoom);
+      }
+
+    // Initial correction
+    adjustForZoom();
+
   </script>
 
   </body>
