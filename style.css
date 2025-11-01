@@ -169,7 +169,7 @@ transform: scale(1.1);
 .clickable {
     position: absolute;
     width: 80px;
-    z-index: 2;
+    z-index: 1;
     cursor: pointer;
     transition: transform 0.2s;
 }
