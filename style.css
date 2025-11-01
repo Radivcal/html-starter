@@ -109,7 +109,7 @@ transition: all 0.4s ease;
 /* Default: attached to header/footer */
 .header-arrow {
 position: absolute;
-  bottom: -15px; /* just below header */
+  bottom: 15px; /* just below header */
 transform: rotate(0deg);
 }
 
@@ -140,6 +140,18 @@ z-index: 100;
 .toggle-arrow:hover {
 opacity: 1;
 transform: scale(1.1);
+}
+
+/* Background */
+body {
+background:
+    url('/assets/PelipperLandingPageAnim.web.webp') no-repeat left top,
+    linear-gradient(to bottom, #87cefa 0%, #2b81e5 100%);
+background-size: auto 100%, cover;
+background-position: left bottom, 0 0;
+background-attachment: fixed;
+color: white;
+font-family: 'Segoe UI', sans-serif;
 }
 
 /* Mute Icon */
