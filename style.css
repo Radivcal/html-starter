@@ -165,6 +165,7 @@ transform: scale(1.1);
 }
 
 .clickable {
+    width: auto;
     position: absolute;
     cursor: pointer;
     transition: transform 0.2s;
@@ -177,19 +178,16 @@ transform: scale(1.1);
 
 /* Specific locations */
 .pelipper {
-    width: 80px;
     top: 40%;
     left: 10%;
 }
 
 .paper {
-    width: 22px;
     top: 50%;
     left: 32%;
 }
 
 .door {
-    width: 60px;
     top: 43%;
     left: 40%;
 }
