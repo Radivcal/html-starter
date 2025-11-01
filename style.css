@@ -97,7 +97,7 @@ transform: translateY(-100%);
 opacity: 0;
 }
 
-/* Arrows  */
+/* Arrows */
 .toggle-arrow {
 width: 30px;
 height: 30px;
@@ -110,15 +110,13 @@ transition: all 0.4s ease;
 .header-arrow {
 position: absolute;
   bottom: -15px; /* just below header */
-left: 50%;
-transform: translateX(-50%) rotate(0deg);
+transform: rotate(0deg);
 }
 
 .footer-arrow {
 position: absolute;
 top: -15px; /* just above footer */
-left: 50%;
-transform: translateX(-50%) rotate(180deg);
+transform: rotate(180deg);
 }
 
 /* When detached (header/footer hidden) */
