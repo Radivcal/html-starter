@@ -109,14 +109,14 @@ transition: all 0.4s ease;
 /* Default: attached to header/footer */
 .header-arrow {
 position: absolute;
-bottom: -30px; /* just below header */
+bottom: -40px; /* just below header */
 left: 10px;
 transform: rotate(0deg);
 }
 
 .footer-arrow {
 position: absolute;
-top: 30px; /* just above footer */
+top: 60px; /* just above footer */
 right: 10px;
 transform: rotate(180deg);
 }
