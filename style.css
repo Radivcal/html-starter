@@ -97,45 +97,51 @@ transform: translateY(-100%);
 opacity: 0;
 }
 
-/* Toggle arrows */
+/* Arrows  */
 .toggle-arrow {
-position: fixed;
 width: 30px;
 height: 30px;
 cursor: pointer;
-left: 10px; /* edge of screen */
-z-index: 100;
 opacity: 0.9;
-transition: transform 0.3s ease;
+transition: all 0.4s ease;
 }
 
-/* Below header */
+/* Default: attached to header/footer */
 .header-arrow {
-top: 260px; /* adjust based on header height */
+position: absolute;
+  bottom: -15px; /* just below header */
+left: 50%;
+transform: translateX(-50%) rotate(0deg);
 }
 
-/* Above footer */
 .footer-arrow {
-bottom: 60px; /* adjust based on footer height */
-transform: rotate(180deg); /* flipped to point up */
+position: absolute;
+top: -15px; /* just above footer */
+left: 50%;
+transform: translateX(-50%) rotate(180deg);
+}
+
+/* When detached (header/footer hidden) */
+.header-arrow.detached {
+position: fixed;
+bottom: 20px;
+right: 20px;
+transform: rotate(180deg);
+z-index: 100;
+}
+
+.footer-arrow.detached {
+position: fixed;
+bottom: 20px;
+right: 20px;
+transform: rotate(0deg);
+z-index: 100;
 }
 
 /* Hover effect */
 .toggle-arrow:hover {
 opacity: 1;
 transform: scale(1.1);
-}
-
-/* Background */
-body {
-background:
-    url('/assets/PelipperLandingPageAnim.web.webp') no-repeat left top,
-    linear-gradient(to bottom, #87cefa 0%, #2b81e5 100%);
-background-size: auto 100%, cover;
-background-position: left bottom, 0 0;
-background-attachment: fixed;
-color: white;
-font-family: 'Segoe UI', sans-serif;
 }
 
 /* Mute Icon */
