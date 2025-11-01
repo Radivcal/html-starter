@@ -88,32 +88,32 @@ text-decoration: underline;
 }
 
 .toggle-arrow {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  z-index: 10;
+position: absolute;
+right: 10px;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 30px;
+cursor: pointer;
+transition: all 0.3s ease;
+z-index: 10;
 }
 
 /* When header is collapsed */
 header.collapsed {
-  height: 40px; /* keeps arrow space visible */
+height: 40px; /* keeps arrow space visible */
 }
 
 header.collapsed .header-content {
-  opacity: 0;
-  pointer-events: none;
+opacity: 0;
+pointer-events: none;
 }
 
 header.collapsed .toggle-arrow {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  transform: none;
+position: fixed;
+bottom: 10px;
+right: 10px;
+transform: none;
 }
 
 /* Background */
