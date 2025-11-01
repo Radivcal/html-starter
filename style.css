@@ -111,7 +111,7 @@ transition: transform 0.3s ease;
 
 /* Below header */
 .header-arrow {
-top: 60px; /* adjust based on header height */
+top: 180px; /* adjust based on header height */
 }
 
 /* Above footer */
