@@ -151,7 +151,7 @@ transform: scale(1.1);
     position: relative;
     margin-top: 0;
     height: 100vh;
-    width: 200vh;
+    width: auto;
     background: linear-gradient(to bottom, #87cefa, #2b81e5);
     overflow: visible;
 }
@@ -159,8 +159,8 @@ transform: scale(1.1);
 /* Background image layer */
 .bg-layer {
     position: relative;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     z-index: 1;
 }
 
@@ -178,11 +178,16 @@ transform: scale(1.1);
 
 /* Specific locations */
 .pelipper {
-    top: 40vh;
+    top: 40%;
     left: 10%;
 }
 
 .door {
-    top: 40vh;
+    top: 40%;
     left: 20%;
+}
+
+.paper {
+    top: 40%;
+    left: 15%;
 }
