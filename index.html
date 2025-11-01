@@ -30,38 +30,19 @@
 
     </header>
 
-
-
     <footer style="text-align:center; margin-top:4em;" id="mainFooter">
       <img src="/assets/arrow.webp" alt="Toggle Footer" id="toggleFooter" class="toggle-arrow footer-arrow">
       <p>Made with 💌 by PokéSoc | Developed by <a href="mailto:ethan.dogra3@gmail.com">Ethan Dogra</a> | Deployed on <a href="https://vercel.com">Vercel</a></p>
     </footer>
 
   <script>
-    const header = document.getElementById('mainHeader');
-    const footer = document.getElementById('mainFooter');
-    const toggleHeader = document.getElementById('toggleHeader');
-    const toggleFooter = document.getElementById('toggleFooter');
+  const header = document.getElementById('mainHeader');
+  const arrow = document.getElementById('toggleHeader');
 
-    toggleHeader.addEventListener('click', () => {
-      header.classList.toggle('hidden');
+  arrow.addEventListener('click', () => {
+    header.classList.toggle('collapsed');
+  });
 
-      if (header.classList.contains('hidden')) {
-        toggleHeader.classList.add('detached');
-      } else {
-        toggleHeader.classList.remove('detached');
-      }
-    });
-
-    toggleFooter.addEventListener('click', () => {
-      footer.classList.toggle('hidden');
-
-      if (footer.classList.contains('hidden')) {
-        toggleFooter.classList.add('detached');
-      } else {
-        toggleFooter.classList.remove('detached');
-      }
-    });
   </script>
 
   </body>

@@ -20,7 +20,8 @@ margin-top: 0;
 position: absolute;
 width: 100%;
 top: 0;
-padding: 0em 0em;
+padding: 1.5em 0em;
+transition: all 0.4 ease;
 background: rgba(255, 255, 255, 0.3);
 backdrop-filter: blur(5px);
 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -86,60 +87,33 @@ footer a:hover {
 text-decoration: underline;
 }
 
-/* Collapsed state (slid out of view) */
-header.hidden {
-transform: translateY(-100%);
-opacity: 100;
-}
-
-footer.hidden {
-transform: translateY(100%);
-opacity: 100;
-}
-
-/* Arrows */
 .toggle-arrow {
-width: 30px;
-height: 30px;
-cursor: pointer;
-opacity: 0.9;
-transition: all 0.4s ease;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
 }
 
-/* Default: attached to header/footer */
-.header-arrow {
-position: absolute;
-  bottom: -30px; /* just below header */
-transform: rotate(0deg);
+/* When header is collapsed */
+header.collapsed {
+  height: 40px; /* keeps arrow space visible */
 }
 
-.footer-arrow {
-position: absolute;
-top: 15px; /* just above footer */
-transform: rotate(180deg);
+header.collapsed .header-content {
+  opacity: 0;
+  pointer-events: none;
 }
 
-/* When detached (header/footer hidden) */
-.header-arrow.detached {
-position: fixed;
-bottom: 20px;
-right: 20px;
-transform: rotate(180deg);
-z-index: 100;
-}
-
-.footer-arrow.detached {
-position: fixed;
-bottom: 20px;
-right: 20px;
-transform: rotate(0deg);
-z-index: 100;
-}
-
-/* Hover effect */
-.toggle-arrow:hover {
-opacity: 1;
-transform: scale(1.1);
+header.collapsed .toggle-arrow {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transform: none;
 }
 
 /* Background */
