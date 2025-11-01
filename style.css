@@ -88,13 +88,13 @@ text-decoration: underline;
 
 /* Collapsed state (slid out of view) */
 header.hidden {
-transform: translateY(-100%);
-opacity: 0;
+transform: translateY(100%);
+opacity: 100;
 }
 
 footer.hidden {
 transform: translateY(-100%);
-opacity: 0;
+opacity: 100;
 }
 
 /* Arrows */
@@ -109,7 +109,7 @@ transition: all 0.4s ease;
 /* Default: attached to header/footer */
 .header-arrow {
 position: absolute;
-  bottom: 15px; /* just below header */
+  bottom: -30px; /* just below header */
 transform: rotate(0deg);
 }
 
