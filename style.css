@@ -29,6 +29,7 @@ background: rgba(255, 255, 255, 0.3);
 backdrop-filter: blur(5px);
 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 background: rgba(0, 0, 0, 0.1);
+z-index: 10;
 }
 
 header img {
@@ -79,6 +80,7 @@ text-align: center;
 padding: 2em 1em;
 border-top: 1px solid rgba(255, 255, 255, 0.2);
 background: rgba(0, 0, 0, 0.3);
+z-index: 10;
 }
 
 footer a {
@@ -146,6 +148,7 @@ transform: scale(1.1);
 }
 
 .scene {
+    margin-top: 160px;
     position: relative;
     width: max(100vw,2000px);
     overflow: visible;
@@ -157,9 +160,10 @@ transform: scale(1.1);
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
     height: 100%;
-    z-index: 0;
+    width: auto;
+    display: block;
+    z-index: 1;
 }
 
 .clickable {
@@ -167,6 +171,7 @@ transform: scale(1.1);
     width: 80px;
     cursor: pointer;
     transition: transform 0.2s;
+    z-index: 2;
 }
 
 .clickable:hover {
@@ -180,6 +185,6 @@ transform: scale(1.1);
 }
 
 .door {
-    top: 170vh;
+    top: 40vh;
     left: 60%;
 }
