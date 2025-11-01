@@ -151,29 +151,28 @@ transform: scale(1.1);
     position: relative;
     margin-top: 0;
     height: 100vh;
-    width: 200vh;
+    width: 200vw;
     background: linear-gradient(to bottom, #87cefa, #2b81e5);
     overflow: visible;
 }
 
 /* Background image layer */
 .bg-layer {
-    position: relative;
-    width: 100%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
     z-index: 1;
 }
 
 .clickable {
     position: absolute;
     width: 80px;
+    transform-origin: top left;
     cursor: pointer;
     transition: transform 0.2s;
     z-index: 2;
-}
-
-.clickable:hover {
-    transform: scale(1.1);
 }
 
 /* Specific locations */
@@ -185,4 +184,8 @@ transform: scale(1.1);
 .door {
     top: 40vh;
     left: 20%;
+}
+
+.clickable:hover {
+    transform: scale(1.1);
 }
