@@ -6,7 +6,10 @@ box-sizing: border-box;
 }
 
 html, body {
+margin: 0;
+padding: 0;
 height: 100%;
+overflow-x: hidden;
 font-family: 'Segoe UI', sans-serif;
 background: linear-gradient(to bottom, #87cefa 0%, #1b2735 100%);
 color: white;
@@ -35,7 +38,7 @@ margin-bottom: 1em;
 header h1 {
 font-size: 2.2em;
 margin-bottom: 0.5em;
--webkit-text-stroke: 1px skyblue;
+-webkit-text-stroke: 2px skyblue;
 }
 
 header nav a {
@@ -128,7 +131,7 @@ transform: scale(1.1);
 }
 
 /* Background */
-body {
+/* body {
 background:
     url('/assets/PelipperLandingPageAnim.web.webp') no-repeat left top,
     linear-gradient(to bottom, #87cefa 0%, #2b81e5 100%);
@@ -137,7 +140,7 @@ background-position: left bottom, 0 0;
 background-attachment: fixed;
 color: white;
 font-family: 'Segoe UI', sans-serif;
-}
+} */
 
 /* Mute Icon */
 .mute-icon {
@@ -151,4 +154,44 @@ transition: transform 0.1s ease;
 
 .mute-icon:hover {
 transform: scale(1.1);
+}
+
+.scene {
+    position: relative;
+    width: 100%;
+    height: 250vh;
+    overflow: visible;
+    background: linear-gradient(to bottom, #87cefa, #2b81e5);
+}
+
+/* Background image layer */
+.bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.clickable {
+  position: absolute;
+  width: 80px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.clickable:hover {
+  transform: scale(1.1);
+}
+
+/* Specific locations */
+.pelipper {
+  top: 40vh;
+  left: 10%;
+}
+
+.door {
+  top: 170vh;
+  left: 60%;
 }
