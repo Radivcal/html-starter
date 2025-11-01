@@ -132,15 +132,15 @@ transform: scale(1.1);
 }
 
 /* Background */
-/* body {
+body {
 background:
     url('/assets/PelipperLandingPageAnim.web.webp') no-repeat left top,
     linear-gradient(to bottom, #87cefa 0%, #2b81e5 100%);
-background-size: auto 100%, cover;
-background-position: left bottom, 0 0;
-background-attachment: fixed;
-color: white;
-font-family: 'Segoe UI', sans-serif;
+    background-size: auto 100%, cover;
+    background-position: left bottom, 0 0;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 /* Mute Icon */
